@@ -1,5 +1,6 @@
 package com.qihoo.test;
 
+import com.qihoo.test.api.Test;
 import org.apache.commons.lang3.StringUtils;
 
 /**
@@ -7,6 +8,8 @@ import org.apache.commons.lang3.StringUtils;
  */
 public class App {
     public static void main(String[] args) {
-        System.out.println(StringUtils.isBlank("456"));
+        Test test=new Test();
+        test.setStr("456");
+        System.out.println(StringUtils.isBlank(test.getStr()));
     }
 }
